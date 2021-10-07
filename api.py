@@ -21,7 +21,10 @@ covid = CovidBusiness(dataset_file)
 
 @app.get("/")
 async def read_root():
-    return {"server": "Servidor iniciado com Sucesso"}
+    return {
+      "server": "Servidor iniciado com Sucesso",
+      "autor" : "Marcos Eduardo"
+    }
 
 '''
 Resource - Covid Status
